@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from 'framer-motion'
-import decoFlowerA from '../assets/images/deco-flower-a.jpeg'
-import closingSealImg from '../assets/images/closing-seal.jpeg'
+import decoFlowerA from '../assets/images/deco-flower-a.png'
+import closingSealImg from '../assets/images/closing-seal.png'
 import styles from './LetterContent.module.css'
 
 function LetterContent({ visible }) {
@@ -44,9 +44,7 @@ function LetterContent({ visible }) {
 
       <motion.div variants={item} className={styles.flowerDivider}>
         <span className={styles.line} />
-        <span className={styles.flowerImgWrap}>
-          <img src={decoFlowerA} alt="" />
-        </span>
+        <img className={styles.flowerImg} src={decoFlowerA} alt="" />
         <span className={`${styles.line} ${styles.right}`} />
       </motion.div>
 
@@ -79,9 +77,7 @@ function LetterContent({ visible }) {
       </motion.div>
 
       <motion.div variants={item} className={styles.closingSeal}>
-        <span className={styles.closingSealImgWrap}>
-          <img src={closingSealImg} alt="" />
-        </span>
+        <img className={styles.closingSealImg} src={closingSealImg} alt="" />
         <p className={styles.closingText}>we can&apos;t wait to see you there</p>
       </motion.div>
     </motion.div>

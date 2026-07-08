@@ -22,7 +22,6 @@
   cursor: pointer;
   display: block;
   width: 100%;
-  border-radius: 16px;
   position: relative;
   z-index: 3;
   filter: drop-shadow(0 18px 32px rgba(180, 120, 105, 0.22));
@@ -34,17 +33,12 @@
   border-radius: 12px;
 }
 
-.envelopeBtn img {
-  border-radius: 12px;
-}
-
 .decoFlower {
   position: absolute;
   width: clamp(58px, 13vw, 96px);
   z-index: 1;
   pointer-events: none;
   opacity: 0.55;
-  mix-blend-mode: multiply;
   filter: saturate(0.75);
 }
 

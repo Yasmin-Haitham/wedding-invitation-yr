@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import petalA from '../assets/images/deco-flower-a.jpeg'
-import petalB from '../assets/images/deco-flower-b.jpeg'
+import petalA from '../assets/images/deco-flower-a.png'
+import petalB from '../assets/images/deco-flower-b.png'
 import styles from './Petals.module.css'
 
 const PETAL_COUNT = 8

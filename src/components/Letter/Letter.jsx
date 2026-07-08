@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
-import emblemImg from '../../assets/images/emblem.jpeg'
-import flourishImg from '../../assets/images/flourish.jpeg'
+import emblemImg from '../../assets/images/emblem.png'
+import flourishImg from '../../assets/images/flourish.png'
 import LetterContent from '../LetterContent.jsx'
 import styles from './Letter.module.css'
 

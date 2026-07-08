@@ -1,7 +1,7 @@
 import { motion, useReducedMotion } from 'framer-motion'
-import envelopeImg from '../../assets/images/envelope.jpeg'
-import decoFlowerA from '../../assets/images/deco-flower-a.jpeg'
-import decoFlowerB from '../../assets/images/deco-flower-b.jpeg'
+import envelopeImg from '../../assets/images/envelope.png'
+import decoFlowerA from '../../assets/images/deco-flower-a.png'
+import decoFlowerB from '../../assets/images/deco-flower-b.png'
 import styles from './Envelope.module.css'
 
 function Envelope({ onOpen }) {

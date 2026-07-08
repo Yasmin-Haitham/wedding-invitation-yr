@@ -66,21 +66,10 @@
   background: linear-gradient(90deg, var(--gold-soft), transparent);
 }
 
-.flowerImgWrap {
-  display: inline-flex;
-  /* Framer Motion leaves a persistent transform on this item's motion.div
-     wrapper, which creates a stacking context and isolates mix-blend-mode
-     on the flower image from the card's true background. Matching the
-     background here locally, scoped tightly to just the image, keeps the
-     blend looking correct without tinting the surrounding text/lines. */
-  background: var(--cream);
-}
-
-.flowerImgWrap img {
+.flowerImg {
   width: 30px;
   opacity: 0.85;
   filter: saturate(0.8);
-  mix-blend-mode: multiply;
 }
 
 .when {
@@ -194,17 +183,9 @@
   gap: 0.6rem;
 }
 
-.closingSealImgWrap {
-  display: inline-flex;
-  /* see .flowerImgWrap comment: matches local background, scoped tightly to
-     just the image, so its mix-blend-mode still composites correctly */
-  background: var(--cream);
-}
-
-.closingSealImgWrap img {
+.closingSealImg {
   width: 42px;
   opacity: 0.8;
-  mix-blend-mode: multiply;
 }
 
 .closingText {
