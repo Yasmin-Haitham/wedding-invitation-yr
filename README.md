@@ -1,4 +1,4 @@
-# Youssef & Rowida — Wedding Invitation
+# Wedding Invitation
 
 A single-page wedding invitation: a sealed envelope opens into an unfolding letter with the
 couple's names, a welcome message, and the date/time/venue. Built with React + Vite and animated
