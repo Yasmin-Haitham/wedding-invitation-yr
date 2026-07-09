@@ -57,6 +57,8 @@
   opacity: 0.22;
   z-index: 0;
   pointer-events: none;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .emblemBottom {
@@ -68,6 +70,8 @@
   opacity: 0.22;
   z-index: 0;
   pointer-events: none;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .flourish {
@@ -79,24 +83,24 @@
 }
 
 .tl {
-  top: 14px;
-  left: 14px;
+  top: 20px;
+  left: 20px;
 }
 
 .tr {
-  top: 14px;
-  right: 14px;
+  top: 20px;
+  right: 20px;
   transform: scaleX(-1);
 }
 
 .bl {
-  bottom: 14px;
-  left: 14px;
+  bottom: 20px;
+  left: 20px;
   transform: scale(1, -1);
 }
 
 .br {
-  bottom: 14px;
-  right: 14px;
+  bottom: 20px;
+  right: 20px;
   transform: scale(-1, -1);
 }

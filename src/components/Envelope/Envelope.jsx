@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 import envelopeVideo from '../../assets/videos/Gen-4 Turbo - Overhead static macro shot of a luxury cream envelope with embossed floral scrollwork,.mp4'
+import envelopePoster from '../../assets/images/envelope.jpeg'
 import decoFlowerA from '../../assets/images/deco-flower-a.png'
 import decoFlowerB from '../../assets/images/deco-flower-b.png'
 import styles from './Envelope.module.css'
@@ -59,6 +60,7 @@ function Envelope({ onOpen }) {
             <video
               ref={videoRef}
               src={envelopeVideo}
+              poster={envelopePoster}
               preload="auto"
               muted
               playsInline

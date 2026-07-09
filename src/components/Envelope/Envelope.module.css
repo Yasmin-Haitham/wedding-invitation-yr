@@ -44,6 +44,8 @@
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 1104 / 832;
+  object-fit: cover;
   transform: scale(1.2);
   transform-origin: center center;
 }
