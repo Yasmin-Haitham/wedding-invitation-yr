@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
-import emblemImg from '../../assets/images/emblem.png'
+import emblemTopImg from '../../assets/images/emblem-top.png'
+import emblemBottomImg from '../../assets/images/emblem-bottom.png'
 import flourishImg from '../../assets/images/flourish.png'
 import LetterContent from '../LetterContent.jsx'
 import styles from './Letter.module.css'
@@ -41,7 +42,8 @@ function Letter({ isOpen, contentVisible, onUnfolded }) {
         }}
       >
         <div className={styles.letter} ref={contentRef}>
-          <img className={styles.emblemBg} src={emblemImg} alt="" aria-hidden="true" />
+          <img className={styles.emblemTop} src={emblemTopImg} alt="" aria-hidden="true" />
+          <img className={styles.emblemBottom} src={emblemBottomImg} alt="" aria-hidden="true" />
           <img className={`${styles.flourish} ${styles.tl}`} src={flourishImg} alt="" aria-hidden="true" />
           <img className={`${styles.flourish} ${styles.tr}`} src={flourishImg} alt="" aria-hidden="true" />
           <img className={`${styles.flourish} ${styles.bl}`} src={flourishImg} alt="" aria-hidden="true" />

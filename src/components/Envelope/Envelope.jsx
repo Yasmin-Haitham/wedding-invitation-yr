@@ -55,16 +55,18 @@ function Envelope({ onOpen }) {
           whileTap={reducedMotion ? undefined : { scale: 0.97 }}
           aria-label="A sealed cream envelope with a gold wax seal — tap to open the invitation"
         >
-          <video
-            ref={videoRef}
-            src={envelopeVideo}
-            preload="auto"
-            muted
-            playsInline
-            onTimeUpdate={handleTimeUpdate}
-            onEnded={onOpen}
-            className={styles.envelopeVideo}
-          />
+          <div className={styles.videoCrop}>
+            <video
+              ref={videoRef}
+              src={envelopeVideo}
+              preload="auto"
+              muted
+              playsInline
+              onTimeUpdate={handleTimeUpdate}
+              onEnded={onOpen}
+              className={styles.envelopeVideo}
+            />
+          </div>
         </motion.button>
       </div>
       <p

@@ -33,11 +33,19 @@
   border-radius: 12px;
 }
 
+.videoCrop {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 8px;
+}
+
 .envelopeVideo {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  transform: scale(1.2);
+  transform-origin: center center;
 }
 
 .decoFlower {
