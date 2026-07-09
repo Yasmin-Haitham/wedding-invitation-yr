@@ -10,6 +10,7 @@ function Envelope({ onOpen }) {
   const reducedMotion = useReducedMotion()
   const videoRef = useRef(null)
   const [isPlaying, setIsPlaying] = useState(false)
+  const [videoPlaying, setVideoPlaying] = useState(false)
 
   // Exit transition duration is 1.5s, so start fade out 1.5s before video ends.
   // For safety, if reducedMotion is enabled, we fade out in 0.2s, so we start 0.2s before the end.
@@ -60,13 +61,20 @@ function Envelope({ onOpen }) {
             <video
               ref={videoRef}
               src={envelopeVideo}
-              poster={envelopePoster}
               preload="auto"
               muted
               playsInline
+              onPlaying={() => setVideoPlaying(true)}
               onTimeUpdate={handleTimeUpdate}
               onEnded={onOpen}
               className={styles.envelopeVideo}
+            />
+            <img
+              src={envelopePoster}
+              alt=""
+              aria-hidden="true"
+              className={styles.posterImg}
+              style={{ opacity: videoPlaying ? 0 : 1 }}
             />
           </div>
         </motion.button>
