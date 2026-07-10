@@ -24,7 +24,7 @@ function LetterContent({ visible }) {
       animate={visible ? 'visible' : 'hidden'}
     >
       <motion.p variants={item} className={styles.eyebrow}>
-        together with their families
+        Together with their families
       </motion.p>
 
       <motion.h1 variants={item} className={styles.names}>
@@ -32,14 +32,18 @@ function LetterContent({ visible }) {
       </motion.h1>
 
       <motion.p variants={item} className={styles.inviteLine}>
-        are inviting you to celebrate with them their wedding
+        are inviting you to celebrate their <span className={styles.weddingWord}>Wedding</span>
       </motion.p>
 
       <motion.p variants={item} className={styles.welcomeMessage}>
-        To our family and dearest friends — from every hello that led us here to this
-        beautiful forever, you have been part of our story all along. We can hardly wait
-        to hold your hands, share this joy, and begin our new chapter surrounded by the
-        people we love most.
+        To our family and friends, you have walked beside us through every chapter of our
+        lives, and we couldn&apos;t imagine starting this new one without you. We can&apos;t
+        wait to celebrate, laugh, and share the joy of this special day with you.
+      </motion.p>
+
+      <motion.p variants={item} className={styles.presenceMessage}>
+        We would be honored by your presence. Please confirm if you can join us. If you are
+        unable to make it, we will miss celebrating with you.
       </motion.p>
 
       <motion.div variants={item} className={styles.flowerDivider}>
@@ -49,7 +53,7 @@ function LetterContent({ visible }) {
       </motion.div>
 
       <motion.div variants={item} className={styles.when}>
-        <span className={styles.day}>wednesday</span>
+        <span className={styles.day}>Wednesday</span>
         <span className={styles.dateMain}>
           July <span className={styles.num}>22</span>
         </span>
